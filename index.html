@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Getahun Hotel - Luxurious Hospitality in Addis Ababa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylee.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">GETAHUN HOTEL</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact-us">Contact</a></li>
+                    <li><a href="#about-us">About</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#signUpModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+<img src ="images/pic1.png"
+            alt="Hotel Exterior"
+            class="hero-img" />
+
+        <div class="hero-overlay">
+            <h1>Welcome to Getahun Hotel</h1>
+            <p>Luxurious hospitality in the heart of Addis Ababa</p>
+            <a href="#features" class="btn btn-warning btn-lg">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section id="features" class="full-width-section">
+        <div class="container-fluid">
+            <h2 class="section-heading">Our Services</h2>
+
+            <div class="feature-column">
+                <div class="horizontal-images-wrap">
+                    <div class="container">
+                        <h3 class="section-heading">Delicious Food</h3>
+                        <p class="text-center">Discover a delicious array of culinary delights prepared by our expert chefs.</p>
+                        <p class="text-center">Explore our gallery of delectable dishes. </p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="d:\kal\new hotel\images\Bur.png" alt="Food" style="width:100%">
+                                    <a href="https://via.placeholder.com/800x600/f39c12/fff?text=Signature+Dish+1" target="_blank">
+                                        <div class="caption">
+                                            <p>A classic grilled patty, often with cheese and fresh toppings, served in a soft bun.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <a href="https://via.placeholder.com/800x600/e67e22/fff?text=International+Cuisine" target="_blank">
+                                        <img src="d:\kal\new hotel\images\Piz.png" alt="Food" style="width:100%">
+                                        <div class="caption">
+                                            <p>A delicious baked flatbread, generously topped with sauce, melted cheese, and your favorite ingredients.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <a href="https://via.placeholder.com/800x600/d35400/fff?text=Fine+Dining+Experience" target="_blank">
+                                        <img src="d:\kal\new hotel\images\Doro.png" alt="Food" style="width:100%">
+                                        <div class="caption">
+                                            <p>A diverse selection of protein-rich dishes, ranging from tender roasts to hearty stews.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="toggle-btn" onclick="$('#foodContent').slideToggle()">Show Food Menu</button>
+                <div id="foodContent" class="feature-content" style="display:none;">
+                    <ul class="menu-list">
+                        <li><input type="checkbox" name="foodItem" data-price="6.00">🍕 Margherita Pizza: $6.00</li>
+                        <li><input type="checkbox" name="foodItem" data-price="8.00">🍔 Cheeseburger: $8.00</li>
+                        <li><input type="checkbox" name="foodItem" data-price="4.00">🥗 Greek Salad: $4.00</li>
+                        <li><input type="checkbox" name="foodItem" data-price="10.00">🌶️ Doro Wot (Ethiopian Chicken Stew): $10.00</li>
+                        <li><input type="checkbox" name="foodItem" data-price="6.00">🍝 Spaghetti Bolognese: $6.00</li>
+                        <li><input type="checkbox" name="foodItem" data-price="5.00">🐟 Grilled Fish with Vegetables: $5.00</li>
+                    </ul>
+                    <input type="text" id="foodCustomerName" placeholder="Enter your full name" class="form-control"><br>
+                    <button type="button" class="btn btn-primary" onclick="submitOrder('food')">Order Food Now</button>
+                    <p id="foodOrderSummary" class="order-summary" style="display:none;"></p>
+                </div>
+            </div>
+
+            <div class="feature-column">
+                <div class="horizontal-images-wrap">
+                    <div class="container">
+                        <h3 class="section-heading">Refreshing Drinks</h3>
+                        <p class="text-center">Quench your thirst with our wide selection of beverages.</p>
+                        <p class="text-center">Browse our drink gallery. Click on the images to enlarge them.</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="d:\kal\new hotel\images\Jui.png"  alt="Drinks" style="width:100%">
+                                    <a href="https://via.placeholder.com/800x600/3498db/fff?text=Fresh+Juices" target="_blank">
+                                        <div class="caption">
+                                            <p>Enjoy refreshing juices, sodas, and our special mocktails.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <a href="https://via.placeholder.com/800x600/2980b9/fff?text=Bar+Selection" target="_blank">
+                                        <img src="d:\kal\new hotel\images\Soft.png" alt="Drinks" style="width:100%">
+                                        <div class="caption">
+                                            <p>Our bar offers a full range of local and international alcoholic beverages.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <a href="https://via.placeholder.com/800x600/2c3e50/fff?text=Coffee+and+Tea" target="_blank">
+                                        <img src="d:\kal\new hotel\images\Cof.png" alt="Drinks" style="width:100%">
+                                        <div class="caption">
+                                            <p>Relax with a perfectly brewed coffee or a selection of fine teas.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="toggle-btn" onclick="$('#drinksContent').slideToggle()">Show Drinks Menu</button>
+                <div id="drinksContent" class="feature-content" style="display:none;">
+                    <ul class="menu-list">
+                        <li> <input type="checkbox" name="drinkItem" data-price="6.00">Espresso: $6.00</li>
+                        <li><input type="checkbox" name="drinkItem" data-price="7.00">🍹 Orange Juice: $7.00</li>
+                        <li><input type="checkbox" name="drinkItem" data-price="3.00">🍷 Local Tej: $3.00</li>
+                        <li><input type="checkbox" name="drinkItem" data-price="8.00">🍺 Ethiopian Beers: $8.00</li>
+                        <li><input type="checkbox" name="drinkItem" data-price="4.00">🥤 Coca-Cola: $4.00</li>
+                        <li><input type="checkbox" name="drinkItem" data-price="7.00">🥛 Milkshake: $7.00</li>
+                    </ul>
+                    <input type="text" id="drinkCustomerName" placeholder="Enter your full name" class="form-control"><br>
+                    <button type="button" class="btn btn-primary" onclick="submitOrder('drinks')">Order Drinks Now</button>
+                    <p id="drinksOrderSummary" class="order-summary" style="display:none;"></p>
+                </div>
+            </div>
+
+            <div class="feature-column">
+                <div class="horizontal-images-wrap">
+                    <div class="container">
+                        <h3 class="section-heading">Comfortable Rooms</h3>
+                        <p class="text-center">Experience unparalleled comfort in our elegant rooms and suites.</p>
+                        <p class="text-center">View our room types. Click on the images to see more details.</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img src="d:\kal\new hotel\images\Stand2.png" alt="Standard Room" style="width:100%"  >
+                                    <a href="https://via.placeholder.com/800x600/1abc9c/fff?text=Standard+Room" target="_blank">
+                                        <div class="caption">
+                                            <p>Our Standard Rooms offer cozy comfort with all essential amenities.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <a href="https://via.placeholder.com/800x600/16a085/fff?text=Deluxe+Room" target="_blank">
+                                        <img src="d:\kal\new hotel\images\Delu.png" alt="Deluxe Room" style="width:100%">
+                                        <div class="caption">
+                                            <p>Upgrade to a Deluxe Room for more space and enhanced features.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <a href="https://via.placeholder.com/800x600/0b8e76/fff?text=Luxury+Suite" target="_blank">
+                                        <img src="d:\kal\new hotel\images\Lex.png" alt="Luxury Suite" style="width:100%">
+                                        <div class="caption">
+                                            <p>Our luxurious Suites provide ample living space and premium amenities for ultimate relaxation.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="toggle-btn" onclick="$('#roomsContent').slideToggle()">Show Room Details & Book</button>
+                <div id="roomsContent" class="feature-content" style="display:none;">
+                    <div class="room-types-grid">
+                        <div class="room-card">
+                            <img src="d:\kal\new hotel\images\Standa.png" alt="Standard Room">
+                            <h4>Standard Room</h4>
+                            <p>Comfortable queen or twin beds, en-suite bathroom, flat-screen TV, mini-bar, free Wi-Fi.</p>
+                            <div class="price">$100/night</div>
+                            <button class="btn btn-success" data-toggle="modal" data-target="#roomBookingModal" data-room="Standard Room" data-price="100">Book Now</button>
+                        </div>
+                        <div class="room-card">
+                            <img src="d:\kal\new hotel\images\Delu.png" alt="Deluxe Room">
+                            <h4>Deluxe Room</h4>
+                            <p>Spacious, King-size bed, city view, larger bathroom, coffee maker, seating area, free Wi-Fi.</p>
+                            <div class="price">$150/night</div>
+                            <button class="btn btn-success" data-toggle="modal" data-target="#roomBookingModal" data-room="Deluxe Room" data-price="150">Book Now</button>
+                        </div>
+                        <div class="room-card">
+                            <img src="d:\kal\new hotel\images\Lex.png" alt="Luxury Suite">
+                            <h4>Luxury Suite</h4>
+                            <p>Separate living room, King-size bed, panoramic views, jetted tub, executive lounge access, free Wi-Fi.</p>
+                            <div class="price">$250/night</div>
+                            <button class="btn btn-success" data-toggle="modal" data-target="#roomBookingModal" data-room="Luxury Suite" data-price="250">Book Now</button>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="container">
+        <h2 class="section-heading">What Our Guests Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <p>"Absolutely loved my stay at Getahun Hotel! The staff were incredibly friendly and helpful, and the food was simply divine. Highly recommend the Doro Wot!"</p>
+                    <div class="rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="testimonial-author">- Sarah L., USA</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <p>"The rooms are spacious and very clean, with great views of the city. The location is perfect for exploring Addis Ababa. I'll definitely be back!"</p>
+                    <div class="rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star-half-o"></span>
+                    </div>
+                    <div class="testimonial-author">- David M., UK</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <p>"A truly luxurious experience. The service was impeccable from arrival to departure. Their coffee selection is a must-try for any coffee lover."</p>
+                    <div class="rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="testimonial-author">- Aisha F., Ethiopia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us" class="container">
+        <div class="contact-section">
+            <h2 class="section-heading">Get in Touch with Getahun Hotel</h2>
+            <p style="text-align: center; margin-bottom: 30px;">
+                We'd love to hear from you! Whether you have questions about your booking, need directions, or want to inquire about our services, our team is ready to assist.
+            </p>
+
+            <div class="contact-info">
+                <div class="info-block">
+                    <h3>Location</h3>
+                    <p>Getahun Hotel</p>
+                    <p>Bole Road (Near Meskel Square), Addis Ababa, Ethiopia</p>
+                    <p>P.O. Box: 12345</p>
+                </div>
+                <div class="info-block">
+                    <h3>Phone & Email</h3>
+                    <p><strong>Phone:</strong> <a href="tel:+251922270753">+251 922 27 07 53</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@getahunhotel.com">getahunmisganaw0@gmail.com</a></p>
+                    <p><strong>Reservations:</strong> <a href="mailto:reservations@getahunhotel.com">reservations@getahunhotel.com</a></p>
+                </div>
+                <div class="info-block">
+                    <h3>Hours of Operation</h3>
+                    <p><strong>Front Desk:</strong> 24/7 (Always Open)</p>
+                    <p><strong>Restaurant:</strong> 6:00 AM - 11:00 PM Daily</p>
+                    <p><strong>Business Center:</strong> 8:00 AM - 6:00 PM (Mon - Fri)</p>
+                    <p><strong>Check-in:</strong> 2:00 PM | <strong>Check-out:</strong> 12:00 PM</p>
+                </div>
+            </div>
+
+            <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+
+            <h3 class="section-heading">Send Us a Message</h3>
+            <form action="YOUR_FORM_SUBMISSION_URL" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="contactName">Your Name:</label>
+                    <input type="text" id="contactName" name="name" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Your Email:</label>
+                    <input type="email" id="contactEmail" name="email" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="contactSubject">Subject:</label>
+                    <input type="text" id="contactSubject" name="subject" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Message:</label>
+                    <textarea id="contactMessage" name="message" required class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="map-section">
+            <h3 class="section-heading">Find Us on the Map</h3>
+            <p>Locate Getahun Hotel easily with our interactive map. We look forward to welcoming you!</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.3685160875087!2d38.76100867451662!3d9.011686391039803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85d30d52a21b%3A0x7d6a5e1e1d1b1d1b!2sMeskel%20Square!5e0!3m2!1sen!2set!4v1700000000000!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <h2 class="section-heading">About Us</h2>
+        <div class="container-fluid about-us-content">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:lavender;">
+<p>Welcome to Getahun Hotel, where your comfort and convenience are our highest priorities, right here in the vibrant heart of Addis Ababa! We’re more than just a place to stay; we are a thoughtfully crafted destination designed to make your visit truly unforgettable. From the moment you step into our welcoming and elegantly designed lobby, you’ll immediately notice the difference that attentive service and exceptional amenities bring to your stay. Every detail, whether big or small, is carefully considered to ensure your satisfaction. Our foundation is built on a deep commitment to exceeding your expectations and creating a relaxing, personalized environment. </p>
+                  <p> Whether you’re here for an important business meeting or a peaceful leisure getaway, we strive to create an atmosphere that feels like home away from home. Our passionate team is always ready to deliver warm, Ethiopian hospitality with professionalism and heart. Every guest matters to us. Your happiness is our mission, and our staff is driven by a genuine desire to serve, assist, and guide you throughout your experience. From a smooth check-in to a memorable farewell, we aim to make your entire journey seamless and delightful.</p>
+                </div>
+                <div class="col-sm-4" style="background-color:lavenderblush;">
+                    <p>At Getahun Hotel, you’ll find a perfect harmony between modern luxury and the warmth of traditional Ethiopian charm. Our spacious rooms and beautifully designed suites offer a calm retreat from the energy of the city. Each room is equipped with plush bedding, fast Wi-Fi, flat-screen TVs, and in many cases, panoramic views of Addis Ababa’s skyline. We’ve blended comfort and functionality to create the ideal space whether you want to unwind after sightseeing or prepare for a busy day of meetings.<br> In addition to restful accommodations, our hotel features an array of thoughtful amenities for both leisure and business travelers. Dine in our elegant on-site restaurant, where our chefs craft flavorful dishes using fresh, locally sourced ingredients. Enjoy both Ethiopian cuisine and global favorites in a refined setting.</p><p> Relax in our stylish lounge with a coffee, cocktail, or book, or recharge in one of our common areas. Business guests can take advantage of our conference rooms and a well-equipped business center tailored for productivity and ease. Everything at Getahun Hotel is designed to make your experience as enjoyable, relaxing, and fulfilling as possible.
+
+</p>
+                    <p>
+                </div>
+                <div class="col-sm-4" style="background-color:lavender;">
+                    <p>One of our greatest strengths is our prime location in Addis Ababa. Getahun Hotel is located near the city’s most popular attractions and key landmarks, offering easy access to the National Museum of Ethiopia, cultural centers, and historic sites. Our guests are also just minutes away from Bole International Airport, major transport routes, and the bustling heart of the capital. Whether you're exploring the local markets, attending conferences, or visiting sacred sites, our location ensures you're always connected to what matters most. We’re proud of our Ethiopian roots and committed to sharing our hospitality, culture, and care with every visitor. Our team continually works to enhance every stay with attention to detail, warmth, and respect.</p>
+                    <p>We strive to create not just a visit—but a lasting memory. We welcome guests from all walks of life and are honored to be part of your journey. Thank you for considering Getahun Hotel. We are truly excited to welcome you and provide a one-of-a-kind experience in one of Africa’s most dynamic and beautiful cities. Book your stay today and let us help make your time in Addis Ababa absolutely unforgettable!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Getahun Hotel. All Rights Reserved. | Designed with <span class="glyphicon glyphicon-heart" style="color:red;"></span> Getahun</p>
+            <div class="social-links">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="signUpModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sign Up</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="signupEmail">Email address:</label>
+                            <input type="email" class="form-control" id="signupEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPassword">Password:</label>
+                            <input type="password" class="form-control" id="signupPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password:</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Already have an account? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginEmail">Email address:</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password:</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Don't have an account? <a href="#" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal">Sign Up here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="roomBookingModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Book Your Room</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="room-booking-form">
+                        <div class="form-group">
+                            <label for="roomType">Room Type:</label>
+                            <input type="text" class="form-control" id="roomType" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="roomPrice">Price per night:</label>
+                            <input type="text" class="form-control" id="roomPrice" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="guestName">Your Full Name:</label>
+                            <input type="text" class="form-control" id="guestName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guestEmail">Your Email:</label>
+                            <input type="email" class="form-control" id="guestEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkInDate">Check-in Date:</label>
+                            <input type="date" class="form-control" id="checkInDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkOutDate">Check-out Date:</label>
+                            <input type="date" class="form-control" id="checkOutDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="numGuests">Number of Guests:</label>
+                            <input type="number" class="form-control" id="numGuests" min="1" value="1" required>
+                        </div>
+                        <p>Total Estimated Cost: $<span id="totalBookingCost">0.00</span></p>
+                        <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+   
+</body>
+</html>
