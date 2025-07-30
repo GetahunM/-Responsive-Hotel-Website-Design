@@ -1,4 +1,5 @@
 Responsive Hotel Website Design
+
 A clean, modern, and fully responsive hotel website built using HTML, CSS, and JavaScript.
 
 Project Overview
@@ -32,7 +33,7 @@ Open index.html in any web browser to view the website
 Modify the code to customize content, styles, and features as needed
 
 Live Demo
-Check out the live demo here: https://getahunm.github.io/responsive-hotel-website/
+Check out the live demo here:https://getahunm.github.io/-Responsive-Hotel-Website-Design/
 
 Contact
 If you have any questions or want to collaborate, feel free to reach out!
