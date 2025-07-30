@@ -66,6 +66,3 @@ Getahun M.
 Frontend Developer & Web Designer
 GitHub: https://github.com/getahunm
 Portfolio: https://getahunm.github.io/Digital-Me/
-
-
-
