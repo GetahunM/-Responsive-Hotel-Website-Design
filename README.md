@@ -1,68 +1,38 @@
-Hotel Website
-
-Welcome to the Hotel Website project — a clean, responsive, and modern website designed for a hotel business to showcase rooms, amenities, and contact information.
+Responsive Hotel Website Design
+A clean, modern, and fully responsive hotel website built using HTML, CSS, and JavaScript.
 
 Project Overview
-
-This website provides a user-friendly interface for potential guests to explore the hotel’s offerings, view room details, and get in touch for bookings or inquiries. The design focuses on clarity, accessibility, and seamless navigation across devices.
+This project showcases a hotel website designed to provide a seamless user experience across devices. It features multiple sections such as home, rooms, amenities, and contact information, all optimized for desktop, tablet, and mobile views.
 
 Features
+Fully responsive layout adapting to various screen sizes
 
-Responsive layout optimized for desktop and mobile devices
+Modern design with smooth navigation and interactive elements
 
-Navigation bar with smooth scrolling to sections like Home, Rooms, About, and Contact
+Mobile-first approach ensuring accessibility and usability on all devices
 
-Attractive hero section with a welcoming image and call-to-action
+Clean and well-structured code for easy maintenance
 
-Rooms gallery with images and brief descriptions
-
-About section detailing hotel amenities and services
-
-Contact form for user inquiries (non-functional placeholder, can be linked to backend)
-
-Clean, modern UI design using HTML5 and CSS3
-
-Easy-to-modify structure for quick customization
+Deployed live using GitHub Pages
 
 Technologies Used
-
 HTML5
 
-CSS3 (Flexbox and Grid layouts)
+CSS3 (Flexbox and Grid)
 
-JavaScript (optional for interactivity and form validation)
+JavaScript (for interactivity)
 
-GitHub Pages for hosting the live demo
+GitHub Pages (for deployment)
 
-How to View the Website
+How to Use
+Clone the repository
 
-You can access the live demo here:
-https://getahunm.github.io/Hotel-Website/
+Open index.html in any web browser to view the website
 
-How to Run Locally
+Modify the code to customize content, styles, and features as needed
 
-Clone this repository:
-git clone https://github.com/getahunm/Hotel-Website.git
+Live Demo
+Check out the live demo here: https://getahunm.github.io/responsive-hotel-website/
 
-Open the index.html file in your web browser.
-
-(Optional) Use a local server like VSCode Live Server or Python’s SimpleHTTPServer for full functionality.
-
-Future Improvements
-
-Add a fully functional booking form connected to backend services
-
-Integrate Google Maps or location services
-
-Add image carousel/sliders for rooms and amenities
-
-Improve accessibility with ARIA roles and keyboard navigation
-
-Optimize load times with compressed images and minified CSS/JS
-
-Author
-
-Getahun M.
-Frontend Developer & Web Designer
-GitHub: https://github.com/getahunm
-Portfolio: https://getahunm.github.io/Digital-Me/
+Contact
+If you have any questions or want to collaborate, feel free to reach out!
